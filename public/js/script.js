@@ -26,7 +26,7 @@ function successFunction(position) {
 
      console.log(lat,lng)
      const address = lat+","+lng
-     fetch(`http://localhost:5000/weather?address=${address}`)
+     fetch(`/weather?address=${address}`)
 .then((resp)=>{
     resp.json().
     then((res)=>{
@@ -57,7 +57,7 @@ formInput.addEventListener('submit',(e)=>{
     const address =  inputTxt.value
     // const address = 'kolkata'
 
-fetch(`http://localhost:5000/weather?address=${address}`)
+fetch(`/weather?address=${address}`)
 .then((resp)=>{
     resp.json().
     then((res)=>{

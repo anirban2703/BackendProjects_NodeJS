@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 const hbs = require('hbs')
+const PORT = process.env.PORT || 5000
 
 // console.log(__dirname)  ==> D:\BackendLearn\New folder\web-server\src
 // console.log(__filename) ==> D:\BackendLearn\New folder\web-server\src\app.js
@@ -197,8 +198,8 @@ app.get('/json',(req, res)=>{
 
   // for starting The server and sending the port number
 
-  app.listen('5000',()=>{
-    console.log("Server id Running @ 5000")
+  app.listen(PORT,()=>{
+    console.log(`Server id Running @ ${PORT}`)
   }) 
 
   

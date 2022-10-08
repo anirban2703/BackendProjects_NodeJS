@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0 ;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap');
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem;
+    flex-direction: column;
+    padding: 0 auto;
+}
+.main-container h2{
+    margin-bottom: 20px;
+}
+
+
+.main-container form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 20%;
+    height: 15rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    -webkit-box-shadow: 0px 0px 33px 3px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 33px 3px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 33px 3px rgba(0,0,0,0.75);
+}
+
+
+
+form input{
+    height: 2rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin-bottom: 3rem;
+}
+form button{
+    padding:0.3rem 2rem ;
+    border:1.5px solid whitesmoke;
+    outline: none;
+    border-radius:0.2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: rgb(0, 149, 255);
+}
+
+.forcast{
+   display: flex;
+   align-items: center;
+   margin-top: 1.5rem;
+   width: 100%;
+   justify-content: space-evenly;
+   border-bottom: 3px solid rgb(8, 119, 230);
+   padding-bottom: 2rem;
+}
+
+.forcast h4{
+    display: flex;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    
+}
+
+
+
+img{
+    width: 20rem;
+    height: 20rem;
+    margin-top: 10rem;
+}
+.header-container{
+    height: 5rem;
+    width: 100vw;
+    padding: 1rem;
+}
+
+
+.header-container a{
+    padding-right: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.footer-container{
+    position: absolute;
+    bottom: 0;
+    height: 8rem;
+    background-color: #eee;
+    width: 100vw;
+    padding: 1rem;
+    opacity: 0.7;
+}
+
+
+
+.weatherimg{
+
+    height: 80px;
+    width: 90px;
+   border: 2px solid black;
+
+}

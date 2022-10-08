@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Express</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    
+</head>
+<body background="https://img.freepik.com/free-vector/paper-style-3d-clouds-background-blue-sky_1017-38298.jpg?w=2000">
+    <div class="main-container">
+    
+    
+    {{>header}}
+    <h2>{{title}}</h2>
+    <h2>Created By <small>{{name}}</small> </h2>
+
+     <form class="form-container">
+        <input class='input-txt'placeholder="Enter Location Name">
+        <button >Search</button>
+     </form>
+       <div style="height: 20px; width:20px"  id="weather-icon"></div>
+
+     <div class="forcast">
+       
+        <h4>Current Temperature : <p id="currTemp">00</p></h4>
+        <h4>Feels Like  : <p id="feelLike">00</p></h4>
+        <h4>Location  : <p id="locationName">''</p></h4>
+        <h4>Search Address  : <p id="searchedlocation">''</p></h4>
+     </div>
+
+     {{>footer}}
+
+     </div>
+     <script src="./js/script.js"></script>
+</body>
+</html>
